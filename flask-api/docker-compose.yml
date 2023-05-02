@@ -1,0 +1,13 @@
+version : '3.3'
+services:
+   flask-api:
+      image: thundereagle36/flask-micro-api:latest
+      container_name : flask-container-api
+      ports:
+           - "5000:5000"
+
+   mongo-db :
+      image: mongo
+      container_name: mongo
+      ports:
+          - "27017:27017"
